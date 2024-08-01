@@ -38,7 +38,7 @@
   "dependencies": {
     "@stdlib/number-float32-base-assert": "^0.2.2",
     "@stdlib/number-float32-base-exponent": "^0.2.3",
-    "@stdlib/number-float32-base-from-binary-string": "^0.2.1",
+    "@stdlib/number-float32-base-from-binary-string": "^0.2.2",
     "@stdlib/number-float32-base-from-word": "^0.2.2",
     "@stdlib/number-float32-base-normalize": "^0.2.3",
     "@stdlib/number-float32-base-signbit": "^0.2.2",
