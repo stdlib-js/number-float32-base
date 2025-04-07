@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-04-07)
 
 <section class="packages">
 
@@ -43,6 +43,28 @@
 ##### Features
 
 -   [`5928127`](https://github.com/stdlib-js/stdlib/commit/5928127d8f24750ec68278e6c5cd5adf1c7e95c3) - add `number/float32/base/div`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="number-float32-base-identity-unreleased">
+
+#### [@stdlib/number/float32/base/identity](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/number/float32/base/identity)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`0572aac`](https://github.com/stdlib-js/stdlib/commit/0572aac77e209513ff935c75f33801451e4a5e33) - add `number/float32/base/identity`
 
 </section>
 
@@ -128,10 +150,11 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
+-   Karan Anand
 -   Neeraj Pathak
 -   Philipp Burckhardt
 
@@ -145,6 +168,9 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1820a95`](https://github.com/stdlib-js/stdlib/commit/1820a95fb1d37471413f822d2ce004c1b8752b39) - **docs:** update related packages sections [(#6503)](https://github.com/stdlib-js/stdlib/pull/6503) _(by stdlib-bot)_
+-   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
+-   [`0572aac`](https://github.com/stdlib-js/stdlib/commit/0572aac77e209513ff935c75f33801451e4a5e33) - **feat:** add `number/float32/base/identity` _(by Gururaj Gurram)_
 -   [`635e38f`](https://github.com/stdlib-js/stdlib/commit/635e38f2c94c01bf24593efce94d1b71811cad4f) - **refactor:** rename file in `number/float32/base/add` [(#5498)](https://github.com/stdlib-js/stdlib/pull/5498) _(by Gururaj Gurram)_
 -   [`a4d7692`](https://github.com/stdlib-js/stdlib/commit/a4d7692d31b5f0d46415e9df7b1f6b3a3936086c) - **refactor:** rename file in `number/float32/base/mul` [(#5463)](https://github.com/stdlib-js/stdlib/pull/5463) _(by Gururaj Gurram)_
 -   [`5081120`](https://github.com/stdlib-js/stdlib/commit/50811206a32132606851c5b5505c6a1e9b145319) - **refactor:** update paths _(by Gururaj Gurram)_
