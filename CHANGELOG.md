@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-06)
+## Unreleased (2025-09-14)
 
 <section class="features">
 
@@ -30,9 +30,9 @@
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#6031](https://github.com/stdlib-js/stdlib/issues/6031), [#6356](https://github.com/stdlib-js/stdlib/issues/6356), [#6616](https://github.com/stdlib-js/stdlib/issues/6616), [#6703](https://github.com/stdlib-js/stdlib/issues/6703), [#7003](https://github.com/stdlib-js/stdlib/issues/7003)
+[#6031](https://github.com/stdlib-js/stdlib/issues/6031), [#6356](https://github.com/stdlib-js/stdlib/issues/6356), [#6616](https://github.com/stdlib-js/stdlib/issues/6616), [#6703](https://github.com/stdlib-js/stdlib/issues/6703), [#7003](https://github.com/stdlib-js/stdlib/issues/7003), [#8027](https://github.com/stdlib-js/stdlib/issues/8027)
 
 </section>
 
@@ -44,6 +44,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`22abc2e`](https://github.com/stdlib-js/stdlib/commit/22abc2e5ddc56329be7611dbc69682522e797eca) - **chore:** address commit comments [(#8072)](https://github.com/stdlib-js/stdlib/pull/8072) _(by Vara Rahul Rajana, Athan Reines)_
 -   [`8b0b780`](https://github.com/stdlib-js/stdlib/commit/8b0b78084a2ff5d7a76ba3c5945b13d7f0906f4f) - **docs:** fix TypeScript declaration linting errors _(by Philipp Burckhardt)_
 -   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - **feat:** add `isAlmostEqual` exports to namespaces _(by Philipp Burckhardt)_
 -   [`dd27f86`](https://github.com/stdlib-js/stdlib/commit/dd27f863be4a7028f73ff7b54e859eb2e0e80bc2) - **feat:** add missing `number/float32/base` exports to namespace _(by Philipp Burckhardt)_
@@ -95,7 +96,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   GURU PRASAD SHARMA
@@ -104,6 +105,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 -   Neeraj Pathak
 -   Philipp Burckhardt
 -   Uday Kakade
+-   Vara Rahul Rajana
 -   zhanggy
 
 </section>
