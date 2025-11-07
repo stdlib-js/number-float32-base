@@ -35,20 +35,32 @@ limitations under the License.
 
 > Base utilities for single-precision floating-point numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float32-base
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { add, assert, div, exponentf, float32ToInt32, float32ToUint32, fromBinaryStringf, fromWordf, identity, mul, normalizef, signbitf, significandf, sub, toBinaryStringf, toWordf, ulpdiff } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
+var ns = require( '@stdlib/number-float32-base' );
 ```
 
 #### ns
@@ -64,17 +76,23 @@ var o = ns;
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`add( x, y )`][@stdlib/number/float32/base/add]</span><span class="delimiter">: </span><span class="description">compute the sum of two single-precision floating-point numbers.</span>
 -   <span class="signature">[`assert`][@stdlib/number/float32/base/assert]</span><span class="delimiter">: </span><span class="description">base single-precision floating-point number assert functions.</span>
+-   <span class="signature">[`div( x, y )`][@stdlib/number/float32/base/div]</span><span class="delimiter">: </span><span class="description">divide two single-precision floating-point numbers.</span>
 -   <span class="signature">[`exponentf( x )`][@stdlib/number/float32/base/exponent]</span><span class="delimiter">: </span><span class="description">return an integer corresponding to the unbiased exponent of a single-precision floating-point number.</span>
 -   <span class="signature">[`fromBinaryStringf( bstr )`][@stdlib/number/float32/base/from-binary-string]</span><span class="delimiter">: </span><span class="description">create a single-precision floating-point number from an IEEE 754 literal bit representation.</span>
 -   <span class="signature">[`fromWordf( word )`][@stdlib/number/float32/base/from-word]</span><span class="delimiter">: </span><span class="description">create a single-precision floating-point number from an unsigned integer corresponding to an IEEE 754 binary representation.</span>
+-   <span class="signature">[`identity( x )`][@stdlib/number/float32/base/identity]</span><span class="delimiter">: </span><span class="description">evaluate the identity function of a single-precision floating-point number.</span>
+-   <span class="signature">[`mul( x, y )`][@stdlib/number/float32/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two single-precision floating-point numbers.</span>
 -   <span class="signature">[`normalizef()`][@stdlib/number/float32/base/normalize]</span><span class="delimiter">: </span><span class="description">return a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.</span>
 -   <span class="signature">[`signbitf( x )`][@stdlib/number/float32/base/signbit]</span><span class="delimiter">: </span><span class="description">return a boolean indicating if the sign bit for a single-precision floating-point number is on (true) or off (false).</span>
 -   <span class="signature">[`significandf( x )`][@stdlib/number/float32/base/significand]</span><span class="delimiter">: </span><span class="description">return an integer corresponding to the significand of a single-precision floating-point number.</span>
+-   <span class="signature">[`sub( x, y )`][@stdlib/number/float32/base/sub]</span><span class="delimiter">: </span><span class="description">subtract two single-precision floating-point numbers.</span>
 -   <span class="signature">[`toBinaryStringf( x )`][@stdlib/number/float32/base/to-binary-string]</span><span class="delimiter">: </span><span class="description">return a string giving the literal bit representation of a single-precision floating-point number.</span>
 -   <span class="signature">[`float32ToInt32( x )`][@stdlib/number/float32/base/to-int32]</span><span class="delimiter">: </span><span class="description">convert a single-precision floating-point number to a signed 32-bit integer.</span>
 -   <span class="signature">[`float32ToUint32( x )`][@stdlib/number/float32/base/to-uint32]</span><span class="delimiter">: </span><span class="description">convert a single-precision floating-point number to an unsigned 32-bit integer.</span>
 -   <span class="signature">[`toWordf( x )`][@stdlib/number/float32/base/to-word]</span><span class="delimiter">: </span><span class="description">return an unsigned 32-bit integer corresponding to the IEEE 754 binary representation of a single-precision floating-point number.</span>
+-   <span class="signature">[`ulpdiff( x, y )`][@stdlib/number/float32/base/ulp-difference]</span><span class="delimiter">: </span><span class="description">compute the number of representable single-precision floating-point values that separate two single-precision floating-point numbers along the real number line.</span>
 
 </div>
 
@@ -92,20 +110,11 @@ var o = ns;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/number-float32-base' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -129,7 +138,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,27 +203,39 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/number/float32/base/assert]: https://github.com/stdlib-js/number-float32-base-assert/tree/esm
+[@stdlib/number/float32/base/add]: https://github.com/stdlib-js/number-float32-base-add
 
-[@stdlib/number/float32/base/exponent]: https://github.com/stdlib-js/number-float32-base-exponent/tree/esm
+[@stdlib/number/float32/base/assert]: https://github.com/stdlib-js/number-float32-base-assert
 
-[@stdlib/number/float32/base/from-binary-string]: https://github.com/stdlib-js/number-float32-base-from-binary-string/tree/esm
+[@stdlib/number/float32/base/div]: https://github.com/stdlib-js/number-float32-base-div
 
-[@stdlib/number/float32/base/from-word]: https://github.com/stdlib-js/number-float32-base-from-word/tree/esm
+[@stdlib/number/float32/base/exponent]: https://github.com/stdlib-js/number-float32-base-exponent
 
-[@stdlib/number/float32/base/normalize]: https://github.com/stdlib-js/number-float32-base-normalize/tree/esm
+[@stdlib/number/float32/base/from-binary-string]: https://github.com/stdlib-js/number-float32-base-from-binary-string
 
-[@stdlib/number/float32/base/signbit]: https://github.com/stdlib-js/number-float32-base-signbit/tree/esm
+[@stdlib/number/float32/base/from-word]: https://github.com/stdlib-js/number-float32-base-from-word
 
-[@stdlib/number/float32/base/significand]: https://github.com/stdlib-js/number-float32-base-significand/tree/esm
+[@stdlib/number/float32/base/identity]: https://github.com/stdlib-js/number-float32-base-identity
 
-[@stdlib/number/float32/base/to-binary-string]: https://github.com/stdlib-js/number-float32-base-to-binary-string/tree/esm
+[@stdlib/number/float32/base/mul]: https://github.com/stdlib-js/number-float32-base-mul
 
-[@stdlib/number/float32/base/to-int32]: https://github.com/stdlib-js/number-float32-base-to-int32/tree/esm
+[@stdlib/number/float32/base/normalize]: https://github.com/stdlib-js/number-float32-base-normalize
 
-[@stdlib/number/float32/base/to-uint32]: https://github.com/stdlib-js/number-float32-base-to-uint32/tree/esm
+[@stdlib/number/float32/base/signbit]: https://github.com/stdlib-js/number-float32-base-signbit
 
-[@stdlib/number/float32/base/to-word]: https://github.com/stdlib-js/number-float32-base-to-word/tree/esm
+[@stdlib/number/float32/base/significand]: https://github.com/stdlib-js/number-float32-base-significand
+
+[@stdlib/number/float32/base/sub]: https://github.com/stdlib-js/number-float32-base-sub
+
+[@stdlib/number/float32/base/to-binary-string]: https://github.com/stdlib-js/number-float32-base-to-binary-string
+
+[@stdlib/number/float32/base/to-int32]: https://github.com/stdlib-js/number-float32-base-to-int32
+
+[@stdlib/number/float32/base/to-uint32]: https://github.com/stdlib-js/number-float32-base-to-uint32
+
+[@stdlib/number/float32/base/to-word]: https://github.com/stdlib-js/number-float32-base-to-word
+
+[@stdlib/number/float32/base/ulp-difference]: https://github.com/stdlib-js/number-float32-base-ulp-difference
 
 <!-- </toc-links> -->
 
