@@ -85,6 +85,7 @@
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/math-base-special-round": "^0.3.0",
     "@stdlib/number-float32-base-assert-is-almost-equal": "github:stdlib-js/number-float32-base-assert-is-almost-equal#main",
+    "@stdlib/number-float32-base-assert-is-almost-same-value": "github:stdlib-js/number-float32-base-assert-is-almost-same-value#main",
     "@stdlib/number-float32-base-assert-is-same-value": "^0.2.2",
     "@stdlib/number-float32-base-assert-is-same-value-zero": "^0.2.1",
     "@stdlib/number-float64-base-to-float32": "^0.2.2",

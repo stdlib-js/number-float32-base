@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-16)
+## Unreleased (2025-12-18)
 
 <section class="features">
 
 ### Features
 
+-   [`37b948e`](https://github.com/stdlib-js/stdlib/commit/37b948e963e9b60c6e13cd226a4b12d2582c7d94) - update `number/float32/base/assert` TypeScript declarations [(#9202)](https://github.com/stdlib-js/stdlib/pull/9202)
+-   [`de4cd3d`](https://github.com/stdlib-js/stdlib/commit/de4cd3d6ece4bd255717fafd72819311e92e2ea9) - add `isAlmostSameValue` to namespace
+-   [`05a56f7`](https://github.com/stdlib-js/stdlib/commit/05a56f75c6ef3e7621d866b585668d520cc5ed96) - add `number/float32/base/assert/is-almost-same-value`
+-   [`51823d9`](https://github.com/stdlib-js/stdlib/commit/51823d9ae78278700f6774fb428d189c8b6e891a) - rename aliases
+-   [`563dfe9`](https://github.com/stdlib-js/stdlib/commit/563dfe9fab0ff36dbb4ddc445664f392de52a5d7) - rename aliases
 -   [`8cb554a`](https://github.com/stdlib-js/stdlib/commit/8cb554a96c2f9186a1e11caa5d7799efaaa5ea67) - update `number/float32/base` TypeScript declarations
 -   [`ce7e772`](https://github.com/stdlib-js/stdlib/commit/ce7e772e28c75673dbc846d844febef8d4426b95) - update `number/float32/base/assert` TypeScript declarations
 -   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - add `isAlmostEqual` exports to namespaces
@@ -27,6 +32,44 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`d6f998c`](https://github.com/stdlib-js/stdlib/commit/d6f998cc1d7b73f1a0d0634611614a668583967e) - update TypeScript comments to use single-precision in `number/float32/base` namespace
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`51823d9`](https://github.com/stdlib-js/stdlib/commit/51823d9ae78278700f6774fb428d189c8b6e891a): rename aliases for `isSameValuef` and `isSameValueZerof`
+
+    -   This commit renames the aliases by dropping the `f` suffix. This
+        suffix was primarily used to distinguish symbols co-existing in the
+        same namespace as double-precision counterparts. Here, however, that
+        is not applicable as these symbols are co-localized with only other
+        single-precision utilities. Hence, to minimize naming variations
+        between namespaces, the symbols have been renamed. To migrate,
+        users should simply drop the `f` suffix.
+
+-   [`563dfe9`](https://github.com/stdlib-js/stdlib/commit/563dfe9fab0ff36dbb4ddc445664f392de52a5d7): rename aliases for `isSameValuef` and `isSameValueZerof`
+
+    -   This commit renames the aliases by dropping the `f` suffix. This
+        suffix was primarily used to distinguish symbols co-existing in the
+        same namespace as double-precision counterparts. Here, however, that
+        is not applicable as these symbols are co-localized with only other
+        single-precision utilities. Hence, to minimize naming variations
+        between namespaces, the symbols have been renamed. To migrate,
+        users should simply drop the `f` suffix.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 <section class="issues">
 
@@ -46,6 +89,17 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`d6f998c`](https://github.com/stdlib-js/stdlib/commit/d6f998cc1d7b73f1a0d0634611614a668583967e) - **fix:** update TypeScript comments to use single-precision in `number/float32/base` namespace _(by Philipp Burckhardt)_
+-   [`37b948e`](https://github.com/stdlib-js/stdlib/commit/37b948e963e9b60c6e13cd226a4b12d2582c7d94) - **feat:** update `number/float32/base/assert` TypeScript declarations [(#9202)](https://github.com/stdlib-js/stdlib/pull/9202) _(by stdlib-bot)_
+-   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
+-   [`de4cd3d`](https://github.com/stdlib-js/stdlib/commit/de4cd3d6ece4bd255717fafd72819311e92e2ea9) - **feat:** add `isAlmostSameValue` to namespace _(by Athan Reines)_
+-   [`05a56f7`](https://github.com/stdlib-js/stdlib/commit/05a56f75c6ef3e7621d866b585668d520cc5ed96) - **feat:** add `number/float32/base/assert/is-almost-same-value` _(by Athan Reines)_
+-   [`94826d4`](https://github.com/stdlib-js/stdlib/commit/94826d4510d7a4131dcc4c0c7b515e909f2237ce) - **chore:** rename variable _(by Athan Reines)_
+-   [`0f3ab3b`](https://github.com/stdlib-js/stdlib/commit/0f3ab3be38c467ac34206d1aad973e7cb56f84af) - **docs:** update copy _(by Athan Reines)_
+-   [`51823d9`](https://github.com/stdlib-js/stdlib/commit/51823d9ae78278700f6774fb428d189c8b6e891a) - **feat:** rename aliases _(by Athan Reines)_
+-   [`0f795ff`](https://github.com/stdlib-js/stdlib/commit/0f795ffaf0b452bf479b11a061f6142cc782d97e) - **chore:** rename variable _(by Athan Reines)_
+-   [`3c46f07`](https://github.com/stdlib-js/stdlib/commit/3c46f07d2c590556429155a4265bd4be82a47e4d) - **chore:** rename variable _(by Athan Reines)_
+-   [`563dfe9`](https://github.com/stdlib-js/stdlib/commit/563dfe9fab0ff36dbb4ddc445664f392de52a5d7) - **feat:** rename aliases _(by Athan Reines)_
 -   [`7db5b32`](https://github.com/stdlib-js/stdlib/commit/7db5b32afe976e2d3c216a45e0927c88e668d340) - **chore:** add `alias_prefix` to parent namespaces [(#8540)](https://github.com/stdlib-js/stdlib/pull/8540) _(by Gunj Joshi)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`db17d2d`](https://github.com/stdlib-js/stdlib/commit/db17d2df2df67b618c41799249b660c4f9933d1d) - **chore:** fix C lint errors [(#8137)](https://github.com/stdlib-js/stdlib/pull/8137) _(by Geo Daoyu, Athan Reines)_
