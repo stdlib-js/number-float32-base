@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float32-base/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@v0.3.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { add, assert, div, exponentf, float32ToInt32, float32ToUint32, fromBinaryStringf, fromWordf, identity, mul, normalizef, signbitf, significandf, sub, toBinaryStringf, toWordf, ulpdiff } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@v0.3.0-esm/index.mjs';
+import { add, assert, div, exponentf, float32ToInt32, float32ToUint32, fromBinaryStringf, fromWordf, identity, mul, normalizef, signbitf, significandf, sub, toBinaryStringf, toWordf, ulpdiff } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
 ```
 
 #### ns
@@ -105,7 +110,7 @@ var o = ns;
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@v0.3.0-esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base@esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
