@@ -2,14 +2,15 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2025-12-18)
+## 0.3.0 (2026-01-30)
 
 <section class="features">
 
 ### Features
 
+-   [`9f03000`](https://github.com/stdlib-js/stdlib/commit/9f03000d699c14f795c53f2eac17567a7ca787b5) - add `number/float32/base/to-float16` [(#8938)](https://github.com/stdlib-js/stdlib/pull/8938)
 -   [`37b948e`](https://github.com/stdlib-js/stdlib/commit/37b948e963e9b60c6e13cd226a4b12d2582c7d94) - update `number/float32/base/assert` TypeScript declarations [(#9202)](https://github.com/stdlib-js/stdlib/pull/9202)
 -   [`de4cd3d`](https://github.com/stdlib-js/stdlib/commit/de4cd3d6ece4bd255717fafd72819311e92e2ea9) - add `isAlmostSameValue` to namespace
 -   [`05a56f7`](https://github.com/stdlib-js/stdlib/commit/05a56f75c6ef3e7621d866b585668d520cc5ed96) - add `number/float32/base/assert/is-almost-same-value`
@@ -32,16 +33,6 @@
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-### Bug Fixes
-
--   [`d6f998c`](https://github.com/stdlib-js/stdlib/commit/d6f998cc1d7b73f1a0d0634611614a668583967e) - update TypeScript comments to use single-precision in `number/float32/base` namespace
-
-</section>
-
-<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
@@ -89,7 +80,19 @@ A total of 7 issues were closed in this release:
 
 <details>
 
--   [`d6f998c`](https://github.com/stdlib-js/stdlib/commit/d6f998cc1d7b73f1a0d0634611614a668583967e) - **fix:** update TypeScript comments to use single-precision in `number/float32/base` namespace _(by Philipp Burckhardt)_
+-   [`f693285`](https://github.com/stdlib-js/stdlib/commit/f69328578f728111a8993e9fae78c7aef0a7143f) - **bench:** refactor to use string interpolation in `number/float32/base/assert` [(#9910)](https://github.com/stdlib-js/stdlib/pull/9910) _(by Lokesh Ranjan)_
+-   [`765abdf`](https://github.com/stdlib-js/stdlib/commit/765abdffa2d20193f4fe18f7add2061d7700ec1f) - **bench:** refactor to use string interpolation in `number/float32/base` [(#9909)](https://github.com/stdlib-js/stdlib/pull/9909) _(by Lokesh Ranjan)_
+-   [`755d5cb`](https://github.com/stdlib-js/stdlib/commit/755d5cb22e6b18aafee24426257953f33cc1f0ec) - **bench:** refactor to use string interpolation in `number/float32/base` [(#9908)](https://github.com/stdlib-js/stdlib/pull/9908) _(by Lokesh Ranjan)_
+-   [`56a8646`](https://github.com/stdlib-js/stdlib/commit/56a864622858956ca75eb8a2af74e81b827115e7) - **bench:** refactor to use string interpolation in `number/float32/base` [(#9907)](https://github.com/stdlib-js/stdlib/pull/9907) _(by Lokesh Ranjan)_
+-   [`ff11bf4`](https://github.com/stdlib-js/stdlib/commit/ff11bf419afd29bd798e46fb6705b0e913bb80bb) - **chore:** add structured package data for `number/float32/base/div` [(#9547)](https://github.com/stdlib-js/stdlib/pull/9547) _(by Neeraj Pathak)_
+-   [`6ce0275`](https://github.com/stdlib-js/stdlib/commit/6ce0275d3eec598ce3ecb8da74a1c82f0de3a482) - **docs:** remove incorrect hyphens from JSDoc `returns` annotations _(by Philipp Burckhardt)_
+-   [`825738a`](https://github.com/stdlib-js/stdlib/commit/825738ab917726d10fe3082569387861cee964cc) - **bench:** use correct variable name in benchmark for `number/float32/base/signbit` [(#9378)](https://github.com/stdlib-js/stdlib/pull/9378) _(by Samarth Kolarkar)_
+-   [`22e2828`](https://github.com/stdlib-js/stdlib/commit/22e2828e91516f984f5d066c35884c63d3a76f8b) - **docs:** update description [(#9291)](https://github.com/stdlib-js/stdlib/pull/9291) _(by stdlib-bot)_
+-   [`9f03000`](https://github.com/stdlib-js/stdlib/commit/9f03000d699c14f795c53f2eac17567a7ca787b5) - **feat:** add `number/float32/base/to-float16` [(#8938)](https://github.com/stdlib-js/stdlib/pull/8938) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
+-   [`d61ac9c`](https://github.com/stdlib-js/stdlib/commit/d61ac9c7ba00677bfde2c2fbc039db20ef9b2ce2) - **docs:** fix README sections _(by Athan Reines)_
+-   [`e2f119d`](https://github.com/stdlib-js/stdlib/commit/e2f119d2898fef45c8bc7a670b2409871c6d4b53) - **docs:** fix description _(by Athan Reines)_
+-   [`177c77b`](https://github.com/stdlib-js/stdlib/commit/177c77bec9929e54e35c01be44799de32045fb68) - **docs:** update description [(#9238)](https://github.com/stdlib-js/stdlib/pull/9238) _(by stdlib-bot)_
+-   [`d6f998c`](https://github.com/stdlib-js/stdlib/commit/d6f998cc1d7b73f1a0d0634611614a668583967e) - **docs:** update TypeScript comments to use single-precision in `number/float32/base` namespace _(by Philipp Burckhardt)_
 -   [`37b948e`](https://github.com/stdlib-js/stdlib/commit/37b948e963e9b60c6e13cd226a4b12d2582c7d94) - **feat:** update `number/float32/base/assert` TypeScript declarations [(#9202)](https://github.com/stdlib-js/stdlib/pull/9202) _(by stdlib-bot)_
 -   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
 -   [`de4cd3d`](https://github.com/stdlib-js/stdlib/commit/de4cd3d6ece4bd255717fafd72819311e92e2ea9) - **feat:** add `isAlmostSameValue` to namespace _(by Athan Reines)_
@@ -158,7 +161,7 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Geo Daoyu
@@ -166,8 +169,10 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Guru Prasad Sharma
 -   Gururaj Gurram
 -   Karan Anand
+-   Lokesh Ranjan
 -   Neeraj Pathak
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 -   Uday Kakade
 -   Vara Rahul Rajana
 
